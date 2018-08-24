@@ -1,0 +1,23 @@
+{
+    "name": "My Tabs",
+    "description" : "Load browser windows with different custom tab collections in one click",
+    "version": "2.0",
+    "permissions": ["storage","tabs"],
+    "options_page": "options.html",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+      "16": "mytabs16.png",
+      "32": "mytabs32.png",
+      "48": "mytabs48.png",
+      "128": "mytabs128.png"
+      }
+    },
+    "icons": {
+      "16": "mytabs16.png",
+      "32": "mytabs32.png",
+      "48": "mytabs48.png",
+      "128": "mytabs128.png"
+    }
+  }

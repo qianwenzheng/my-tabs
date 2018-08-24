@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Mood Options</title>
+    <script src="popup.js"></script>
+  </head>
+  <style type="text/css">
+    .btn {
+    min-width:90px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0 0 20px #eee;
+    background-position: right center; 
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    }
+    body {
+    min-width:90px;
+}
+    </style>
+  </head>
+  <body>
+    <div style="text-align:center;">
+    <button class="btn" id="work">On the Grind</button> &nbsp;
+    <button class="btn" id="bum">Happy Bum</button> &nbsp;
+    <button class="btn" id="relax">Keep Calm</button> &nbsp;
+    <button class="btn" id="woke">Stay Woke</button> &nbsp;
+    <button class="btn" id="break">Study Break</button> &nbsp;
+    <a href="options.html"><div id="custom" style="font-family:courier; text-align:center">Edit</div></a>
+    </div>
+  </body>
+</html>
+

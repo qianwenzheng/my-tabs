@@ -1,0 +1,23 @@
+{
+    "name": "Mood Extension",
+    "description" : "Loads specific webpages in a window depending on your mood",
+    "version": "1.0",
+    "permissions": ["storage","tabs"],
+    "options_page": "options.html",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+      "16": "mood16.png",
+      "32": "mood32.png",
+      "48": "mood48.png",
+      "128": "mood128.png"
+      }
+    },
+    "icons": {
+      "16": "mood16.png",
+      "32": "mood32.png",
+      "48": "mood48.png",
+      "128": "mood128.png"
+    }
+  }

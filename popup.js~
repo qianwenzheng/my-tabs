@@ -1,0 +1,56 @@
+document.addEventListener('DOMContentLoaded', function () {
+	// add event listener for buttons
+	document.getElementById('work').addEventListener('click', loadSites);
+        document.getElementById('bum').addEventListener('click', loadSites);
+        document.getElementById('relax').addEventListener('click', loadSites);
+        document.getElementById('woke').addEventListener('click', loadSites);
+        document.getElementById('break').addEventListener('click', loadSites);
+    });
+
+
+//Different urls according to the user's mood
+var workURLs = ['https://glow.williams.edu/login/ldap', 'https://github.com/', 
+		'https://www.google.com/gmail/', 'https://docs.google.com/',
+		'http://bit.ly/csci376', 'http://www.cs.williams.edu/~dbarowy/cs334s18/',
+		'https://www.google.com/'];
+var bumURLs = ['https://www.netflix.com/browse', 'https://www.youtube.com/',
+	       'https://www.hulu.com/'];
+var relaxURLs = ['http://rainymood.com/', 'https://calmingmanatee.tumblr.com/'];
+var wokeURLs = ['https://www.ted.com/', 'https://www.nytimes.com/',
+		'https://globalvoices.org/'];
+var breakURLs = ['https://www.facebook.com/', 'https://twitter.com/Twitter',
+		 'https://www.reddit.com/', 'https://www.pinterest.com/',
+		 'https://www.tumblr.com/'];
+
+// load sites in new background tabs
+function loadSites(e) {
+    switch(e.target.id) {
+    case 'work':
+	for(var i=0; i<workURLs.length; i++){
+	    chrome.tabs.create({url:workURLs[i]});
+	}
+	break;
+    case 'bum':
+	for(var i=0; i<bumURLs.length; i++){
+	    chrome.tabs.create({url:bumURLs[i]});
+	}
+	break;
+    case 'relax':
+	for(var i=0; i<relaxURLs.length; i++){
+	    chrome.tabs.create({url:relaxURLs[i]});
+	}
+	break;
+    case 'woke':
+	for(var i=0; i<wokeURLs.length; i++){
+	    chrome.tabs.create({url:wokeURLs[i]});
+	}
+	break;
+    case 'break':
+	for(var i=0; i<breakURLs.length; i++){
+	    chrome.tabs.create({url:breakURLs[i]});
+	}
+	break;
+    }   
+    
+}
+
